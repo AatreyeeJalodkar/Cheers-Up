@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cheers_UP</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="js/jquerymin.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/owlcarousel.js"></script>
+
+</head>
+<body>
+    <!-- Head Section Start -->
+    <header class="header_sec py-3" id="head_sec">
+        <div class="container">
+            <div class="header_top">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-4">
+                        <ul class="navbar nav header_list wow fadeInLeft" data-wow-delay="0.5s">
+                            <li class="list-item">
+                                <a href="#" class="nav-link"><img src="images/fb.png" class="img-fluid"></a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="nav-link"><img src="images/twt.png" class="img-fluid"></a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="nav-link"><img src="images/insta .png" class="img-fluid"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-sm-4 mx-auto" >
+                        <div class="header_logo text-center  wow fadeInUp" data-wow-delay="0.8s">
+                            <a href="#" class="nav-link"><img src="images/logo_img.png" class="img-fluid" ></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 " >
+                        <ul class="navbar nav header_list ms-auto float-sm-righ wow fadeInRight" data-wow-delay="1.1s">
+                            <li class="list-item">
+                                <!-- <a href="#" class="nav-link"><img src="images/search.png" class="img-fluid"></a> -->
+                                <div class="dropdown"> 
+                                    <a href="#" data-bs-toggle="dropdown">
+                                        <img src="images/search.png" class="img-fluid">
+                                    </a>
+                                    <div class="dropdown-menu custom_flex">
+                                        <div class="dropdown-item" href="#" >
+                                            <form action="javascript:void(0)" id="serchForm" method="get" name="cheers_serchForm">
+                                                <div class="form_group ">
+                                                      <input type="text" placeholder="Search" name="search_form"> 
+                                                      <button type="submit">
+                                                       <img src="images/search1.png" alt="search1">
+                                                      </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="nav-link"><img src="images/cart.png" class="img-fluid"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bottom py-sm-1">
+                <!-- <ul class="navbar nav header_menu  justify-content-center">
+                    <li class="list-item">
+                        <a href="#" class="nav-link active px-4">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="nav-link px-4">Beers</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="nav-link px-4">Shop</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="nav-link px-4">Blog</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="nav-link px-4">About</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="nav-link px-4">Contact</a>
+                    </li>
+                </ul> -->
+
+
+                <nav class="navbar navbar-expand-sm header_menu">
+                    <div class="container">
+                      <button class="navbar-toggler" onclick="w3_open()" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                      </button>
+                      <div class="collapse navbar-collapse justify-content-center home_list" id="collapsibleNavbar">
+                        <button onclick="w3_close()" class="w3-bar-item w3-large cross_button">&times;</button>
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Beers</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Head Section end -->
+
+    <!-- Hero Section Start -->
+    <section class="hero_sec pt_100" id="hero_sec_data">
+        <div class="container">
+            <div class="mx_700">
+
+                <div class="best_box" data-img="images/banner.jpg">
+                    <div class="slider_box">
+                        <h2 class="text-white fs_75">The Best <br> Hand Crafted <strong>Beer</strong></h2>
+                        <p class="text-white fs_25 fw-300">It is a long established fact that a reader will be distracted by 
+                        the readable content of a page when looking at its layout.</p>
+                        <div class="orange_btn pt-4">
+                            <a href="javascript:void(0)" class="btn">VIEW MORE</a>
+                        </div>
+                    </div>
+                </div> 
+
+
+                <div class="slider_sec owl-carousel owl-theme" id="slider_part">
+                    <div class="item" data-img="images/banner.jpg">
+                        <div class="slider_box">
+                            <h2 class="text-white fs_75">The Best <br> Hand Crafted <strong>Beer</strong></h2>
+                            <p class="text-white fs_25 fw-300">It is a long established fact that a reader will be distracted by 
+                            the readable content of a page when looking at its layout.</p>
+                            <div class="orange_btn pt-4">
+                                <a href="javascript:void(0)" class="btn" >VIEW MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-img="images/banner1.jpg">
+                        <div class="slider_box">
+                            <h2 class="text-white fs_75">The Best <br> Hand Crafted <strong>Beer</strong></h2>
+                            <p class="text-white fs_25 fw-300">It is a long established fact that a reader will be distracted by 
+                            the readable content of a page when looking at its layout.</p>
+                            <div class="orange_btn pt-4">
+                                <a href="javascript:void(0)" class="btn" >VIEW MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-img="images/banner.jpg">
+                        <div class="slider_box">
+                            <h2 class="text-white fs_75">The Best <br> Hand Crafted <strong>Beer</strong></h2>
+                            <p class="text-white fs_25 fw-300">It is a long established fact that a reader will be distracted by 
+                            the readable content of a page when looking at its layout.</p>
+                            <div class="orange_btn pt-4">
+                                <a href="javascript:void(0)" class="btn">VIEW MORE</a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- First Section Strat -->
+      <section class="first_section ptb_100" id="01_sec">
+            <div class="container">
+                <div class="text_section">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="left_section pe-lg-4">
+                                <div class="left_head_sec">
+                                <h3 class="fs_50">How We Create <br> Our Best Brew</h3>
+                                <p class="fs_18">Lorem Ipsum is simply dummy text of the printing and typesetting industry.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                </div>
+                            </div>
+                            <div class="orange_btn ">
+                                <a href="javascript:void(0)" class= "fs_20 btn">VIEW MORE</a>
+                            </div>
+                        </div> 
+
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="right_section">
+                                        <div class="img_sec">
+                                            <span><img src="images/Icon.png" alt="img" class="img-fluid"></span>
+                                        </div>
+                                        <div class="right_text">
+                                            <h6 class="fs_20">QUALITY INGREDIENTS</h6>
+                                            <p class="fs_16">There are many variations of passages of Lorem Ipsum available.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="right_section py-3">
+                                        <div class="img_sec">
+                                            <span><img src="images/icon2.png" alt="img" class="img-fluid"></span>
+                                        </div>
+                                        <div class="right_text">
+                                            <h6 class="fs_20">PREMIUM BREWING</h6>
+                                            <p class="fs_16 m-0">There are many variations of passages of Lorem Ipsum available.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="right_section">
+                                        <div class="img_sec">
+                                            <span><img src="images/icon1.png" alt="img" class="img-fluid"></span>
+                                        </div>
+                                        <div class="right_text">
+                                            <h6 class="fs_20">UNRIVALED TASTE</h6>
+                                            <p class="fs_16">There are many variations of passages of Lorem Ipsum available.</p>
+                                        </div>
+                                    </div>
+        
+                                    <div class="right_section py-3">
+                                        <div class="img_sec">
+                                            <span><img src="images/Icon3.png" alt="img" class="img-fluid"></span>
+                                        </div>
+                                        <div class="right_text">
+                                            <h6 class="fs_20">FULL MANUFACTURE</h6>
+                                            <p class="fs_16 m-0">There are many variations of passages of Lorem Ipsum available.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- First Section End -->
+
+    <!-- Second Section Start -->
+    <section class="second_section py-5" id="02_sec">
+        <div class="container">
+            <div class="text_button">
+                <div class="row ">
+                    <div class="col-lg-8 col-md-9">
+                        <h3 class="fs_50">Our Best Brew Product</h3>
+                        <p class="fs_18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, eligendi velit ea excepturi laborum nam voluptatum repudiandae obcaecati amet voluptate iure fuga voluptatibus pariatur ducimus rem saepe architecto.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-3 align-self-end">
+                        <div class="orange_btn pt-3 text-end">
+                            <a href="javascript:void(0)" class="btn" >VIEW MORE</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="owl-carousel owl-theme product_slider">
+                    <div class="item">
+                        <div class="px-3 pt-5">
+                            <div class="row">
+                            
+                                <div class="col-sm-2">
+                                    <div class="bottol_img">
+                                        <span><img src="images/Bud-Light.png" alt="bottol_img" width="100%" height="auto" class="img-fluid"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="symbol_text">
+                                        <div class="icons_img">
+                                            <span><img src="images/Like.png" alt="icon_img" class="img-fluid"></span>
+                                            <span><img src="images/View.png" alt="icon_img" class="img-fluid"></span>
+                                        </div>
+                                        <div class="inner_text">
+                                            <h6 class="fs_22 py-1 m-0">BUD LIGHT</h6>
+                                            <p class="fs_18">There are many variations of passages of Lorem Ipsum available. Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                                        </div>
+                                        <div class="rs_num">
+                                            <span class="text-secondary">$50/-</span>
+                                            <span>$45/-</span><br><br>
+                                        </div>
+                                        <div class="orange_btn">
+                                            <a href="javascript:void(0)" class="btn fs_18" >ADD TO CARD</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="px-3 pt-5">
+                        <div class="row">
+                           
+                            <div class="col-sm-2">
+                                <div class="bottol_img">
+                                    <span><img src="images/Heineken.png" alt="bottol_img" width="100%" height="auto" class="img-fluid"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="symbol_text">
+                                    <div class="icons_img">
+                                        <span><img src="images/Like.png" alt="icon_img" class="img-fluid"></span>
+                                        <span><img src="images/View.png" alt="icon_img" class="img-fluid"></span>
+                                    </div>
+                                    <div class="inner_text">
+                                        <h6 class="fs_22 py-1 m-0">HEINEKEN</h6>
+                                        <p class="fs_18">There are many variations of passages of Lorem Ipsum available. Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                                    </div>
+                                    <div class="rs_num">
+                                        <span class="text-secondary">$50/-</span>
+                                        <span>$45/-</span><br><br>
+                                    </div>
+                                    <div class="orange_btn">
+                                        <a href="javascript:void(0)" class="btn fs_18" >ADD TO CARD</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    <div class="item">
+                        <div class="px-3 pt-5">
+                            <div class="row">
+                           
+                                <div class="col-sm-2">
+                                    <div class="bottol_img">
+                                        <span><img src="images/Bud-Light.png" alt="bottol_img" width="100%" height="auto" class="img-fluid"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="symbol_text">
+                                        <div class="icons_img">
+                                            <span><img src="images/Like.png" alt="icon_img" class="img-fluid"></span>
+                                            <span><img src="images/View.png" alt="icon_img" class="img-fluid"></span>
+                                        </div>
+                                        <div class="inner_text">
+                                            <h6 class="fs_22 py-1 m-0">BUD LIGHT</h6>
+                                            <p class="fs_18">There are many variations of passages of Lorem Ipsum available. Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                                        </div>
+                                        <div class="rs_num">
+                                            <span class="text-secondary">$50/-</span>
+                                            <span>$45/-</span><br><br>
+                                        </div>
+                                        <div class="orange_btn">
+                                            <a href="javascript:void(0)" class="btn fs_18" >ADD TO CARD</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="px-3 pt-5">
+                            <div class="row">
+                           
+                                <div class="col-sm-2">
+                                    <div class="bottol_img">
+                                        <span><img src="images/Bud-Light.png" alt="bottol_img" width="100%" height="auto" class="img-fluid"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="symbol_text">
+                                        <div class="icons_img">
+                                            <span><img src="images/Like.png" alt="icon_img" class="img-fluid"></span>
+                                            <span><img src="images/View.png" alt="icon_img" class="img-fluid"></span>
+                                        </div>
+                                        <div class="inner_text">
+                                            <h6 class="fs_22 py-1 m-0">BUD LIGHT</h6>
+                                            <p class="fs_18">There are many variations of passages of Lorem Ipsum available. Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                                        </div>
+                                        <div class="rs_num">
+                                            <span class="text-secondary">$50/-</span>
+                                            <span>$45/-</span><br><br>
+                                        </div>
+                                        <div class="orange_btn">
+                                            <a href="javascript:void(0)" class="btn fs_18" >ADD TO CARD</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="px-3 pt-5">
+                            <div class="row">
+                           
+                                <div class="col-sm-2">
+                                    <div class="bottol_img">
+                                        <span><img src="images/Bud-Light.png" alt="bottol_img" width="100%" height="auto" class="img-fluid"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="symbol_text">
+                                        <div class="icons_img">
+                                            <span><img src="images/Like.png" alt="icon_img" class="img-fluid"></span>
+                                            <span><img src="images/View.png" alt="icon_img" class="img-fluid"></span>
+                                        </div>
+                                        <div class="inner_text">
+                                            <h6 class="fs_22 py-1 m-0">BUD LIGHT</h6>
+                                            <p class="fs_18">There are many variations of passages of Lorem Ipsum available. Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                                        </div>
+                                        <div class="rs_num">
+                                            <span class="text-secondary">$50/-</span>
+                                            <span>$45/-</span><br><br>
+                                        </div>
+                                        <div class="orange_btn">
+                                            <a href="javascript:void(0)" class="btn fs_18" >ADD TO CARD</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Second Section End -->
+
+    <!-- Third section start -->
+    <section class="third_section ptb_100" id="03_sec">
+        <div class="container">
+            <div class="text_image ">
+                <div class="text_left">
+                    <h3 class="fs_50">We Work Hard. <br>We Deliver.</h3>
+                    <p class="fs_18">Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+                </div>
+                <div class="orange_btn">
+                    <a href="javascript:void(0)" class="fs_20 btn">VIEW MORE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Third section end -->
+
+
+    <!-- Fourth section start -->
+    <section class="fourth_section pt_100" id="04_sec">
+        <div class="container">
+            <div class="text_heading text-center">
+                <h3 class="fs_50">What Our Client Says</h3>
+                <p class="fs_18">Lorem Ipsum is simply dummy text of the printing and typesetting. It is a long <br> established fact that a reader will be distracted by the readable content.</p>
+            </div>
+
+            <div class="client_slider owl-carousel owl-theme">
+                <div class="item">
+                    <div class="blog pt-3">
+                        <div class="text">
+                            <div class="text-center pt-2">
+                                <span><img src="images/quote.png" alt="quote_img" class="img-fluid"></span>
+                            </div>
+                            <div class="text_pra">
+                                <p class="m-4 fs_16 text-secondary">It is a long established fact that a reader will be distracted bt the readable content of a page when looking at its layout.</p>
+                            </div>
+                        </div>
+                        <div class="img_text_small text-center">
+                            <div class="block_img">
+                                <img src="images/image.png" alt="img" class="img-fluid">
+                            </div>
+                            <div class="text_name text-center">
+                                <p class="m-0 fs_16">BARBARA W. BORG</p>
+                                <span class="text-secondary small">Medical Translator</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="blog pt-3">
+                        <div class="text">
+                            <div class="text-center pt-2">
+                                <span><img src="images/quote.png" alt="quote_img" class="img-fluid"></span>
+                            </div>
+                            <div class="text_pra">
+                                <p class="m-4 fs_16 text-secondary">It is a long established fact that a reader will be distracted bt the readable content of a page when looking at its layout.</p>
+                            </div>
+                        </div>
+                        <div class="img_text_small text-center">
+                            <div class="block_img">
+                                <img src="images/image01.png" alt="img" class="img-fluid">
+                            </div>
+                            <div class="text_name text-center">
+                                <p class="m-0 fs_16">BARBARA W. BORG</p>
+                                <span class="text-secondary small">Medical Translator</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="blog pt-3">
+                        <div class="text">
+                            <div class="text-center pt-2">
+                                <span><img src="images/quote.png" alt="quote_img" class="img-fluid"></span>
+                            </div>
+                            <div class="text_pra">
+                                <p class="m-4 fs_16 text-secondary">It is a long established fact that a reader will be distracted bt the readable content of a page when looking at its layout.</p>
+                            </div>
+                        </div>
+                        <div class="img_text_small text-center">
+                            <div class="block_img">
+                                <img src="images/image02.jpg" alt="img" class="img-fluid">
+                            </div>
+                            <div class="text_name text-center">
+                                <p class="m-0 fs_16">BARBARA W. BORG</p>
+                                <span class="text-secondary small">Medical Translator</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="blog pt-3">
+                        <div class="text">
+                            <div class="text-center pt-2">
+                                <span><img src="images/quote.png" alt="quote_img" class="img-fluid"></span>
+                            </div>
+                            <div class="text_pra">
+                                <p class="m-4 fs_16 text-secondary">It is a long established fact that a reader will be distracted bt the readable content of a page when looking at its layout.</p>
+                            </div>
+                        </div>
+                        <div class="img_text_small text-center">
+                            <div class="block_img">
+                                <img src="images/image02.jpg" alt="img" class="img-fluid">
+                            </div>
+                            <div class="text_name text-center">
+                                <p class="m-0 fs_16">BARBARA W. BORG</p>
+                                <span class="text-secondary small">Medical Translator</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="blog pt-3">
+                        <div class="text">
+                            <div class="text-center pt-2">
+                                <span><img src="images/quote.png" alt="quote_img" class="img-fluid"></span>
+                            </div>
+                            <div class="text_pra">
+                                <p class="m-4 fs_16 text-secondary">It is a long established fact that a reader will be distracted bt the readable content of a page when looking at its layout.</p>
+                            </div>
+                        </div>
+                        <div class="img_text_small text-center">
+                            <div class="block_img">
+                                <img src="images/image02.jpg" alt="img" class="img-fluid">
+                            </div>
+                            <div class="text_name text-center">
+                                <p class="m-0 fs_16">BARBARA W. BORG</p>
+                                <span class="text-secondary small">Medical Translator</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Fourth section end -->
+
+     <!-- Fifth section start -->
+     <section class="fifth_section ptb_100" id="05_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-12">
+                    <div class="text_contain">
+                        <h3 class="fs_50">Our Perfect Team</h3>
+                        <p class="fs_18">Lorem Ipsum is simply dummy text of the printing and typesetting. It is a long <br> established fact that a reader will be distracted by the readable content.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 align-self-end">
+                    <div class="orange_btn pt-3 text-end">
+                        <a href="javascript:void(0)" class="btn fs_20">VIEW MORE</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="three_commom_part pt-3">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="team_img">
+                                    <img src="images/team-(1).png" alt="img" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-7 p-0">
+                                <div class="team_memmber pt-3">
+                                    <h4 class="m-0 fs_16">CASEY S. SMITH</h4>
+                                    <p class="text-secondary fs_16 m-0">Bartender</p>
+                                    <ul class="nav social_mediya_img">
+                                        <li class="list-item">
+                                            <a href="#" class="nav-link"><img src="images/fb_s.png" class="img-fluid" height="15px"></a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#" class="nav-link"><img src="images/twt_s.png" class="img-fluid" height="15px"></a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#" class="nav-link"><img src="images/insta_s.png" class="img-fluid" height="15px"></a>
+                                        </li>
+                                    </ul>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="team_img">
+                                    <img src="images/team-(2).png" alt="img" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-7 p-0">
+                                <div class="team_memmber  pt-3">
+                                    <h4 class="m-0 fs_16">BRENDA R. DEPAZ</h4>
+                                    <p class="text-secondary fs_16 m-0">Manager</p>
+                                    <ul class="nav social_mediya_img">
+                                        <li class="list-item">
+                                            <a href="#" class="nav-link"><img src="images/fb_s.png" class="img-fluid" height="15px"></a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#" class="nav-link"><img src="images/twt_s.png" class="img-fluid" height="15px"></a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#" class="nav-link"><img src="images/insta_s.png" class="img-fluid" height="15px"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="team_img">
+                                    <img src="images/team-(3).png" alt="img" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-7 p-0">
+                                <div class="team_memmber pt-3">
+                                    <h4 class="m-0 fs_16">DWAYNE T. DAVIS</h4>
+                                    <p class="text-secondary fs_16 m-0">Wainter</p>
+                                    <ul class="nav social_mediya_img">
+                                        <li class="list-item">
+                                           <a href="#" class="nav-link"><img src="images/fb_s.png" class="img-fluid" height="15px"></a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#" class="nav-link"><img src="images/twt_s.png" class="img-fluid" height="15px"></a>
+                                        </li>
+                                        <li class="list-item">
+                                            <a href="#" class="nav-link"><img src="images/insta_s.png" class="img-fluid" height="15px"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fifth section end -->
+
+    <!-- Sixth section start -->
+       <section class="sixth_section pb_100" id="06_sec">
+            <div class="gallery_section">
+                <div class="large_img">
+                    <img src="images/image1(1).png" alt="img" class="img-fluid">
+                    <a href="javascript:void(0)" class="icon_img">
+                        <img src="images/Link.png" alt="img" class="img-fluid">
+                    </a>
+                </div>
+
+                <div class="small_img">
+                    <img src="images/images-(3).png" alt="img" class="img-fluid">
+                    <a href="javascript:void(0)" class="icon_img">
+                        <img src="images/Link.png" alt="img" class="img-fluid">
+                    </a>
+                </div>
+
+                <div class="small_img">
+                    <img src="images/images-(1).png" alt="img" class="img-fluid">
+                    <a href="javascript:void(0)" class="icon_img">
+                        <img src="images/Link.png" alt="img" class="img-fluid">
+                    </a>
+                </div>
+
+                <div class="small_img">
+                    <img src="images/image3-(1).png" alt="img" class="img-fluid">
+                    <a href="javascript:void(0)" class="icon_img">
+                        <img src="images/Link.png" alt="img" class="img-fluid">
+                    </a>
+                </div>
+
+                <div class="small_img">
+                    <img src="images/6471743.png" alt="img" class="img-fluid">
+                    <a href="javascript:void(0)" class="icon_img">
+                        <img src="images/Link.png" alt="img" class="img-fluid">
+                    </a>
+                </div>
+
+                <div class="large_img">
+                    <img src="images/image3-(2).png" alt="img" class="img-fluid">
+                    <a href="javascript:void(0)" class="icon_img">
+                        <img src="images/Link.png" alt="img" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+       </section>
+    <!-- Sixth section end -->
+
+    <!-- Seventh section start -->
+    <section class="seven_section pb_100" id="07_sec">
+        <div class="container">
+            <div class="text_heading text-center">
+                <h3 class="fs_50">Latest News and Articles</h3>
+                <p class="fs_18">Lorem Ipsum is simply dummy text of the printing and typesetting. It is a long <br> established fact that a reader will be distracted by the readable content.</p>
+            </div>
+
+            <div class="row pt-3">
+                <div class="col-lg-4 col-md-6">
+                    <div class="image_text">
+                        <div class="img_part">
+                            <a href="#"><img src="images/blog-(2).png" alt="img" width="100%" class="img-fluid"></a>
+                        </div>
+                        <div class="text_part pt-2">
+                            <span class="text-secondary small date">June 25,2022 |</span>
+                            <span><a href="#">Beer</a></span>
+                            <h4><a href="#">How to properly teste hand craft beer</a></h4>
+                            <p class="fs_18">It is a long estabilished fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            <div class="orange_btn">
+                                <a href="javascript:void(0)" class="btn">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="image_text">
+                        <div class="img_part">
+                            <a href="#"><img src="images/blog-(1).png" alt="img" width="100%" class="img-fluid"></a>
+                        </div>
+                        <div class="text_part pt-2">
+                            <span class="text-secondary small date">June 25,2022 |</span>
+                            <span><a href="#">Beer</a></span>
+                            <h4><a href="#">What row material are required for brewing</a></h4>
+                            <p class="fs_18">It is a long estabilished fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            <div class="orange_btn">
+                                <a href="javascript:void(0)" class="btn">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="image_text">
+                        <div class="img_part">
+                            <a href="#"><img src="images/blog-(1)1.png" alt="img" width="100%" class="img-fluid"></a>
+                        </div>
+                        <div class="text_part pt-2">
+                            <div class="beer_small">
+                                <span class="text-secondary small date">June 25,2022 |</span>
+                                <span class=""><a href="#">Beer</a></span>
+                            </div>
+                           
+                            <h4><a href="#">How to properly brew high and powerful beer.</a></h4>
+                            <p class="fs_18">It is a long estabilished fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            <div class="orange_btn">
+                                <a href="javascript:void(0)" class="btn">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seventh section end -->
+
+    <!-- Eighth section start -->
+    <section class="eight_section" id="08_sec">
+        <div class="subscribe py-5">
+            <div class="heading text-center">
+                <h4 class="fs_18">Want to know about our updates?</h4>
+                <h3 class="fs_50">Subscribe to Our Newsletter</h3>
+            </div>
+            <div class="input_field">
+                <form action="javascript:void(0)" id="form_09" method="post">
+                    <div class="input_field d-md-flex justify-content-center">
+                            <input type="email" placeholder="Your email address here" class="px-3">
+                        <div class="orange_btn">
+                            <a href="javascript:void(0)" class="btn">SUBSCRIBE</a>
+                        </div>
+                      </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Eighth section end -->
+ 
+   <!-- Footer section start -->
+    <footer class="footer_section pt-5">
+        <div class="container">
+            <div class="logo_text text-center">
+                <img src="images/logo_footer.png" alt="img" class="img-fluid">
+                <p class="fs_18 py-3 m-0">It is a long established fact that a reader will be distracted by<br> the readable content of a page whe looking at its layout.</p>
+            </div>
+            <div class="list">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);"><img src="images/fb_f.png" alt="fb_img" class="img-fluid"></a> 
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);"><img src="images/" alt="twt_img"></a>
+                        </li>  -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);"><img src="images/insta_f.png" alt="twt_img" class="img-fluid"></a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);"><img src="images/linkedin_f.png" alt="twt_img" class="img-fluid"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);"><img src="images/google-plus.png" alt="insta_img" class="img-fluid"></a>
+                        </li>
+                    </ul>
+
+                    <div class="term_privacy text-center pb-5">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link p-0" href="javascript:void(0);"> Term & Condition</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link p-0" href="javascript:void(0);">| Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+
+        <div class="small_text text-center ">
+            <span class="text_up">CHEERS UP</span>
+            <span class="text_right">@ All Rights Reserved - 2022</span>
+        </div>
+    </footer>
+  <!-- Footer section end -->
+
+  <!-- Moveable button start -->
+    <div class="upper_button">
+        <a href="#head_section" class="btn "><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+    </div>
+    <!-- Moveable button end -->
+
+     <script src="js/wow.min.js"></script>
+     <script src="js/custom.js"></script>
+     <script>
+
+        $('#slider_part').owlCarousel({
+            loop: false,
+            margin: 10,
+            nav: true,
+            dots: true,
+            nav: false,
+            autoplay:true,
+            responsive: {
+                0: {
+                    items: 1,
+                     dots: true,
+                     nav: false
+                }
+            }
+        });
+
+         
+     </script>
+     <script>
+        new WOW().init();
+       </script>
+</body>
+</html>
+

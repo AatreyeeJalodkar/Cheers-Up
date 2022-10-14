@@ -1,0 +1,154 @@
+:root{
+	--fs14:14px;
+	--fs16:16px;
+	--fs18:18px;
+	--fs20:20px;
+	--fs22:22px;
+	--fs75:75px;
+	--fs25:25px;
+	--fs40:40px;
+	--fs50:50px;
+	--lh45:45px;
+	--lh80:80px;
+	--light_black:#000000d9;
+	--black:#000;
+	--white:#fff;
+	--light_gray:#80808017;
+	--gray:#808080;
+	--brown_dark:#511c0a;
+	--brown_light:#5f1812;
+	--orange_dark:#f3a602;
+	--orange_light:#dc8033;
+	--p_100:100px;
+}
+.fs_14{
+	font-size:var(--fs14);
+}
+.fs_16{
+	font-size:var(--fs16);
+}
+.fs_18{
+	font-size: var(--fs18);
+    line-height: var(--lh35);
+}
+.fs_20{
+	font-size:var(--fs20);
+}
+.fs_22{
+	font-size:var(--fs22);
+	line-height: var(--lh55);
+}
+.fs_25{
+	font-size: var(--fs25);
+	line-height: var(--lh45);
+}
+.fs_40{
+	font-size:var(--fs40);
+}
+.fs_50{
+	font-size:var(--fs50);
+}
+.fs_75{
+	font-size:var(--fs75);
+	line-height: var(--lh80);
+}
+.ptb_100{
+	padding-top: var(--p_100);
+	padding-bottom:var(--p_100);
+}
+.pb_100{
+	padding-bottom:var(--p_100);
+}
+.pt_100{
+	padding-top: var(--p_100);
+}
+.fw-300{
+	font-weight: 300;
+}
+.fw-400{
+	font-weight: 400;
+}
+.fw-500{
+	font-weight: 500;
+}
+.fw-600{
+	font-weight: 600;
+}
+.fw-700{
+	font-weight: 700;
+}
+.fw-800{
+	font-weight: 800;
+}
+.fw-900{
+	font-weight: 900;
+}
+.org_dark{
+	color:var(--orange_dark);
+}
+.gary_nor{
+	color:var(--gray);
+}
+@media(max-width: 1680px){
+	:root{
+		--f23:23px;
+		--fs20:16px;
+		--fs75:65px;
+		--fs25:20px;
+		--lh45:35px;
+		--lh80:70px;
+		--p_100:80px;
+	}
+}
+
+@media(max-width:1200px){
+	:root{
+		--fs14:14px;
+		--fs16:16px;
+		--fs18:16px;
+		--fs20:20px;
+		--fs22:22px;
+		--fs75:55px;
+		--fs25:20px;
+		--fs40:40px;
+		--fs50:35px;
+		--lh45:40px;
+		--lh80:55px;
+	}
+}
+
+@media(max-width:991px){
+	:root{
+		--fs14:14px;
+		--fs16:16px;
+		--fs18:16px;
+		--fs20:20px;
+		--fs22:22px;
+		--fs75:55px;
+		--fs25:20px;
+		--fs40:40px;
+		--fs50:35px;
+		--lh45:40px;
+		--lh80:55px;
+	}
+}
+
+@media(max-width:575px){
+	:root{
+		--fs14:14px;
+		--fs16:16px;
+		--fs18:14px;
+		--fs20:15px;
+		--fs22:22px;
+		--fs75:25px;
+		--fs25:19px;
+		--fs40:40px;
+		--fs50:16px;
+		--lh45:45px;
+		--lh80:80px;
+		--p_100:40px;
+		--lh80:25px;
+		--lh45:25px;
+		--p_100:30px;
+	}
+}

@@ -1,0 +1,200 @@
+@media(min-width:1681px){
+    .header_list li a img{
+        height: 26px;
+    }
+    .header_logo img{
+        max-width: 300px;
+    }
+    .header_list li a{
+        padding: 0px 9px;
+    }
+    .mx_700{
+        min-width: 880px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width:1200px){
+    .header_list li a {
+        padding: 0px 6px;
+    }
+    .client_slider .blog {
+        position: relative;
+        /* padding: 30px 290px; */
+    }
+    .footer_section .logo_text img {
+        width: 224px;
+    }
+    .second_section .nav-btn.prev-slide {
+        left: -27px;
+    }
+    .second_section .nav-btn.next-slide {
+        right: -27px;
+    }
+    .fifth_section .team_img img {
+        width: 110px;
+        height: 110px;
+    }
+    .fourth_section .client_slider .item{
+        margin-top: 55px;
+    } 
+}
+
+@media(max-width:991px){
+    .header_list li a{
+        padding: 0px 6px;
+    }
+    .header_logo img {
+        max-width: 214px;
+    }
+    .third_section .text_image .text_left p br{
+        display: block;
+    }
+    .fifth_section .text_section .right_section_row{
+        padding-top: 18px;
+    }
+    p br{
+        display: none;
+    }
+    .client_slider .blog {
+        position: relative;
+        padding: 14px 166px;
+    }
+}
+
+@media(max-width:767px){
+    .header_list li a{
+        padding: 0px 3px;
+    }
+    .header_logo img {
+        max-width: 173px;
+    }
+    .client_slider .blog {
+        position: relative;
+        padding: 50px 99px;
+    }
+    .fifth_section .three_commom_part{
+        text-align: center;
+    }
+    .fifth_section .three_commom_part .social_mediya_img{
+        justify-content: center;
+    }
+    .sixth_section .gallery_section {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .eight_section .input_field{
+        text-align: center;
+    }
+    .eight_section .input_field .orange_btn{
+        padding-top: 12px;
+    }
+}
+
+@media(max-width:575px){
+    .header_sec .header_list{
+        display: none;
+    }
+    .header_logo img {
+        max-width: 115px;
+    }
+    .header_sec{
+        padding: 0px;
+    }
+    .header_sec .navbar-toggler{
+        position:absolute;
+        top:-33px;
+        right:0;
+    }
+    .header_sec .header_top .row{
+        grid-row-gap:unset;
+    }
+    .header_sec .header_menu .home_list button {
+        color:var(--orange_dark);
+    }
+    .header_sec .header_menu button{
+        display: block;
+        color:var(--orange_dark);
+    }
+    .header_sec .header_menu button.w3-bar-item.w3-large.cross_button{
+        color: var(--white);
+    }
+    .header_sec .header_menu .home_list{
+        background-color:var(--orange_dark);
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 200px;
+        padding: 12px 12px;
+    }
+    .header_sec .header_menu .cross_button{
+        float: right;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 27px;
+        margin-top: -16px;
+    }
+    .header_sec .header_menu{
+        padding: 0px;
+    }
+    .mx_700 {
+        max-width: 100%;
+    }
+    .hero_sec {
+        min-height: 75vh;
+    }
+    .hero_sec .slider_sec{
+        display:none;
+    }
+    .hero_sec .best_box{
+        display: block;
+    }
+    .first_section .text_section{
+        text-align: center;
+    }
+    .second_section .nav-btn.prev-slide{
+        left: -5px;
+        width: 29px;
+    }
+    .second_section .nav-btn.next-slide{
+        right: -5px;
+        width: 29px;
+    }
+    .second_section .text_button .row {
+        grid-row-gap: unset !important;
+    }
+    .second_section .bottol_img {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .second_section .bottol_img img{
+        height: 300px;
+        width: 100px;
+    }
+    .second_section .symbol_text{
+        text-align: center;
+    }
+    .client_slider .blog {
+        position: relative;
+        padding: 50px 15px 0px;
+    }
+    .second_section .text_button , .fifth_section .container{
+        text-align: center !important;
+    }
+    .sixth_section .gallery_section {
+        grid-template-columns: repeat(1,2fr);
+        grid-gap:unset;
+    }
+    .eight_section .input_field .orange_btn{
+        padding-top: 15px;
+    }
+    .eight_section .input_field{
+        text-align: center;
+    }
+    .footer_section .logo_text img{
+        width: 150px;
+    }
+    
+}
